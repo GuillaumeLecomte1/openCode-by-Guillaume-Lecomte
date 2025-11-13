@@ -1,0 +1,49 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "opencode",
+  "model": "anthropic/claude-sonnet-4-5",
+  "small_model": "anthropic/claude-haiku-4-5",
+  "autoupdate": true,
+  "tui": {
+    "scroll_speed": 3
+  },
+  "tools": {
+    "write": true,
+    "edit": true,
+    "read": true,
+    "bash": true,
+    "glob": true,
+    "grep": true,
+    "list": true,
+    "webfetch": true,
+    "task": true,
+    "todowrite": true,
+    "todoread": true
+  },
+  "formatter": {
+    "prettier": {
+      "command": ["npx", "prettier", "--write", "$FILE"],
+      "extensions": [".js", ".ts", ".jsx", ".tsx", ".json", ".md", ".css", ".scss"]
+    }
+  },
+  "share": "manual",
+  "permission": {
+    "bash": "ask",
+    "edit": "auto"
+  },
+  "instructions": [
+    "CONTRIBUTING.md",
+    "docs/guidelines.md",
+    ".cursor/rules/*.md"
+  ],
+  "mcp": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-filesystem", "/home/glecomte"]
+    },
+    "git": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-git", "--repository", "/home/glecomte"]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-5",
+  "small_model": "anthropic/claude-haiku-4-5",
+  "instructions": [
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "docs/**/*.md"
+  ],
+  "tools": {
+    "write": true,
+    "edit": true,
+    "read": true,
+    "bash": true,
+    "glob": true,
+    "grep": true,
+    "list": true,
+    "webfetch": true,
+    "task": true,
+    "todowrite": true,
+    "todoread": true
+  },
+  "formatter": {
+    "prettier": {
+      "command": ["npm", "run", "format", "--", "$FILE"],
+      "extensions": [".js", ".ts", ".jsx", ".tsx", ".json", ".md", ".css", ".scss"]
+    }
+  },
+  "command": {
+    "test": {
+      "template": "Run the full test suite with coverage report and show any failures.\nFocus on the failing tests and suggest fixes.",
+      "description": "Run tests with coverage",
+      "agent": "build"
+    },
+    "lint": {
+      "template": "Run linting and type checking on the codebase. Fix any auto-fixable issues and report the rest.",
+      "description": "Run lint and typecheck",
+      "agent": "build"
+    },
+    "build": {
+      "template": "Build the project and ensure it passes all checks. Report any build errors.",
+      "description": "Build the project",
+      "agent": "build"
+    }
+  }
+}
