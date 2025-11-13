@@ -52,6 +52,10 @@ secrets/
 *.pem
 *.p12
 
+# Local configuration files with API keys
+config/global.local.json
+config/project.local.json
+
 # Backup files
 *.bak
 *.backup

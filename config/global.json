@@ -44,6 +44,13 @@
     "git": {
       "command": "npx",
       "args": ["@modelcontextprotocol/server-git", "--repository", "/home/glecomte"]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "env": {
+        "CONTEXT7_API_KEY": "$CONTEXT7_API_KEY"
+      }
     }
   }
 }

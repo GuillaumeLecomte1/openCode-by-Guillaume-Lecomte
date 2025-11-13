@@ -95,12 +95,18 @@ install_mcp_servers() {
     # Check if npm is available
     if command -v npm &> /dev/null; then
         print_status "Installing MCP npm packages..."
-        npm install -g @modelcontextprotocol/server-filesystem @modelcontextprotocol/server-git
+        npm install -g @modelcontextprotocol/server-filesystem @modelcontextprotocol/server-git @upstash/context7-mcp
         print_success "MCP servers installed"
     else
         print_warning "npm not found. Please install MCP servers manually:"
-        echo "npm install -g @modelcontextprotocol/server-filesystem @modelcontextprotocol/server-git"
+        echo "npm install -g @modelcontextprotocol/server-filesystem @modelcontextprotocol/server-git @upstash/context7-mcp"
     fi
+    
+    print_status "Context7 setup:"
+    echo "1. Get your API key from: https://context7.com/dashboard"
+    echo "2. Edit ~/.config/opencode/opencode.json"
+    echo "3. Replace 'YOUR_CONTEXT7_API_KEY' with your actual key"
+    echo "4. Restart OpenCode to apply changes"
 }
 
 # Setup environment variables
@@ -180,8 +186,10 @@ main() {
     echo "Next steps:"
     echo "1. Restart your terminal or run: source ~/.bashrc (or ~/.zshrc)"
     echo "2. Configure your API keys: opencode auth login"
-    echo "3. For new projects, copy opencode.json.template to opencode.json"
-    echo "4. Run: opencode"
+    echo "3. Get Context7 API key: https://context7.com/dashboard"
+    echo "4. Edit ~/.config/opencode/opencode.json and replace 'YOUR_CONTEXT7_API_KEY'"
+    echo "5. For new projects, copy opencode.json.template to opencode.json"
+    echo "6. Run: opencode"
     echo ""
     print_status "Enjoy your optimized OpenCode setup! 🚀"
 }

@@ -8,7 +8,7 @@ Ce repository contient ma configuration personnelle d'OpenCode, incluant :
 - Configuration globale optimisée
 - Agents spécialisés (code review, performance, sécurité, etc.)
 - Commandes personnalisées (test, lint, build)
-- Serveurs MCP préconfigurés
+- Serveurs MCP préconfigurés (Filesystem, Git, Context7)
 - Script d'installation automatique
 
 ## 🚀 Installation Rapide
@@ -22,7 +22,7 @@ Ce repository contient ma configuration personnelle d'OpenCode, incluant :
 
 2. **Cloner ce repository** :
    ```bash
-   git clone https://github.com/votre-username/openCode-by-Guillaume-Lecomte.git
+   git clone https://github.com/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte.git
    cd openCode-by-Guillaume-Lecomte
    ```
 
@@ -53,7 +53,12 @@ Le script va :
    opencode auth login
    ```
 
-3. **Lancer OpenCode** :
+3. **Configurer Context7** (optionnel mais recommandé) :
+   - Créez un compte : [context7.com/dashboard](https://context7.com/dashboard)
+   - Éditez `~/.config/opencode/opencode.json`
+   - Remplacez `YOUR_CONTEXT7_API_KEY` avec votre clé
+
+4. **Lancer OpenCode** :
    ```bash
    opencode
    ```
@@ -191,6 +196,32 @@ Intégration Git avancée :
     "args": ["@modelcontextprotocol/server-git", "--repository", "/home/glecomte"]
   }
 }
+```
+
+### Context7 🆕
+Système de cache de documentation avec Upstash Redis :
+```json
+{
+  "context7": {
+    "command": "npx",
+    "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_CONTEXT7_API_KEY"]
+  }
+}
+```
+
+**Setup Context7 :**
+1. Créez un compte : [context7.com/dashboard](https://context7.com/dashboard)
+2. Obtenez votre clé API
+3. Remplacez `YOUR_CONTEXT7_API_KEY` dans la configuration
+4. Redémarrez OpenCode
+
+**Utilisation :**
+```bash
+# Créez un composant React avec la documentation à jour
+Create a React component with TypeScript. use context7
+
+# Configurez un middleware Express
+Set up Express CORS middleware. use context7
 ```
 
 ## 🎯 Personnalisation
