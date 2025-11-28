@@ -68,7 +68,7 @@ install_global_config() {
 install_agents() {
     print_status "Installing OpenCode agents..."
     
-    for agent_file in agents/*.md; do
+    for agent_file in agent/*.md; do
         if [ -f "$agent_file" ]; then
             cp "$agent_file" ~/.opencode/agent/
             print_success "Installed agent: $(basename "$agent_file")"
@@ -95,8 +95,8 @@ install_mcp_servers() {
     # Check if npm is available
     if command -v npm &> /dev/null; then
         print_status "Installing MCP npm packages..."
-        npm install -g @modelcontextprotocol/server-filesystem @modelcontextprotocol/server-git @upstash/context7-mcp
-        print_success "MCP servers installed"
+        npm install -g @modelcontextprotocol/server-filesystem @modelcontextprotocol/server-git @upstash/context7-mcp || print_warning "Some MCP packages failed to install (this may be expected if they're not available)"
+        print_success "MCP servers installation completed"
     else
         print_warning "npm not found. Please install MCP servers manually:"
         echo "npm install -g @modelcontextprotocol/server-filesystem @modelcontextprotocol/server-git @upstash/context7-mcp"

@@ -18,7 +18,8 @@ This agent helps with:
   "agent": {
     "security-engineer": {
       "description": "Identifies vulnerabilities and implements security standards",
-      "model": "anthropic/claude-sonnet-4-5",
+      "mode": "subagent",
+      "model": "grok-code-fast-1",
       "prompt": "You are a security engineer. Focus on identifying vulnerabilities, implementing secure coding practices, and ensuring compliance with security standards."
     }
   }

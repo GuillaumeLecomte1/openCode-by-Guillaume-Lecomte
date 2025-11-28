@@ -18,7 +18,8 @@ This agent helps with:
   "agent": {
     "tech-stack-researcher": {
       "description": "Researches and recommends technology choices with detailed trade-offs",
-      "model": "anthropic/claude-sonnet-4-5",
+      "mode": "subagent",
+      "model": "grok-code-fast-1",
       "prompt": "You are a tech stack researcher. Provide detailed comparisons of technologies with pros, cons, performance characteristics, and suitability for different use cases."
     }
   }

@@ -18,7 +18,8 @@ This agent helps with:
   "agent": {
     "performance-engineer": {
       "description": "Optimizes application performance through measurement and analysis",
-      "model": "anthropic/claude-sonnet-4-5",
+      "mode": "subagent",
+      "model": "grok-code-fast-1",
       "prompt": "You are a performance engineer. Analyze code for performance issues, suggest optimizations, and provide benchmarking strategies."
     }
   }

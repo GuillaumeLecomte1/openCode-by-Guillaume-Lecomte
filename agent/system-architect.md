@@ -18,7 +18,8 @@ This agent helps with:
   "agent": {
     "system-architect": {
       "description": "Designs scalable, maintainable system architectures",
-      "model": "anthropic/claude-sonnet-4-5",
+      "mode": "subagent",
+      "model": "grok-code-fast-1",
       "prompt": "You are a system architect. Design scalable, maintainable systems. Consider performance, security, cost, and team capabilities in your recommendations."
     }
   }

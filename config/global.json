@@ -1,8 +1,8 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "theme": "opencode",
-  "model": "anthropic/claude-sonnet-4-5",
-  "small_model": "anthropic/claude-haiku-4-5",
+  "model": "grok-code-fast-1",
+  "small_model": "grok-code-fast-1",
   "autoupdate": true,
   "tui": {
     "scroll_speed": 3
