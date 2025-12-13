@@ -1,0 +1,49 @@
+# Dépendances principales pour OpenCode Orchestrator
+# Classification Hybride de Projets
+
+# Core dependencies
+numpy>=1.21.0
+requests>=2.25.0
+
+# Optional dependencies for enhanced features
+PyYAML>=5.4.0          # For YAML output format support
+pandas>=1.3.0          # For data analysis and batch processing
+matplotlib>=3.3.0      # For visualization of results (optional)
+seaborn>=0.11.0        # For statistical visualizations (optional)
+
+# Development dependencies (optional)
+pytest>=6.2.0          # For unit testing
+pytest-cov>=2.12.0     # For test coverage
+black>=21.6.0          # For code formatting
+flake8>=3.9.0          # For linting
+mypy>=0.910            # For type checking
+
+# LLM integration (optional - depends on chosen LLM provider)
+openai>=0.27.0         # For OpenAI GPT models
+anthropic>=0.3.0       # For Anthropic Claude models
+transformers>=4.20.0   # For Hugging Face models
+torch>=1.11.0          # For PyTorch-based models
+
+# Performance and caching (optional)
+redis>=3.5.0           # For distributed caching
+memcached>=1.60.0      # For memory caching
+joblib>=1.1.0          # For parallel processing
+
+# Database integration (optional)
+sqlalchemy>=1.4.0      # For database storage of results
+sqlite3                 # Built-in Python module
+postgresqlpsycopg2     # For PostgreSQL support
+
+# Monitoring and metrics (optional)
+prometheus-client>=0.14.0  # For metrics collection
+psutil>=5.8.0          # For system monitoring
+
+# API and web framework (optional)
+fastapi>=0.78.0        # For REST API wrapper
+uvicorn>=0.17.0        # For ASGI server
+aiohttp>=3.8.0         # For async HTTP requests
+
+# Documentation (optional)
+sphinx>=4.0.0          # For documentation generation
+sphinx-rtd-theme>=0.5.0  # For documentation theme
+myst-parser>=0.17.0    # For Markdown documentation
