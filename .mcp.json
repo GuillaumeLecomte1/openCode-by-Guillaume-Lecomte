@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/glecomte/Projet/Perso/openCode-by-Guillaume-Lecomte"],
+      "env": {}
+    },
+    "git": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git", "/home/glecomte/Projet/Perso/openCode-by-Guillaume-Lecomte"],
+      "env": {}
+    }
+  }
+}

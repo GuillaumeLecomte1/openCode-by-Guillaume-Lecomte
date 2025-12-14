@@ -88,10 +88,42 @@ install_commands() {
     done
 }
 
+# Create MCP configuration
+create_mcp_config() {
+    print_status "Creating MCP configuration (.mcp.json)..."
+
+    local project_root=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+    local mcp_config="$project_root/.mcp.json"
+
+    cat > "$mcp_config" << 'EOF'
+{
+  "mcpServers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "PROJECT_ROOT"],
+      "env": {}
+    },
+    "git": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git", "PROJECT_ROOT"],
+      "env": {}
+    }
+  }
+}
+EOF
+
+    # Replace PROJECT_ROOT with actual path
+    sed -i "s|PROJECT_ROOT|$project_root|g" "$mcp_config"
+
+    print_success "MCP configuration created at $mcp_config"
+}
+
 # Install MCP servers
 install_mcp_servers() {
     print_status "Installing MCP servers..."
-    
+
     # Check if npm is available
     if command -v npm &> /dev/null; then
         print_status "Installing MCP npm packages..."
@@ -101,12 +133,11 @@ install_mcp_servers() {
         print_warning "npm not found. Please install MCP servers manually:"
         echo "npm install -g @modelcontextprotocol/server-filesystem @modelcontextprotocol/server-git @upstash/context7-mcp"
     fi
-    
-    print_status "Context7 setup:"
+
+    print_status "Context7 setup (optional):"
     echo "1. Get your API key from: https://context7.com/dashboard"
-    echo "2. Edit ~/.config/opencode/opencode.json"
-    echo "3. Replace 'YOUR_CONTEXT7_API_KEY' with your actual key"
-    echo "4. Restart OpenCode to apply changes"
+    echo "2. Add to .mcp.json if needed"
+    echo "3. Restart OpenCode to apply changes"
 }
 
 # Setup environment variables
@@ -175,6 +206,7 @@ main() {
     install_global_config
     install_agents
     install_commands
+    create_mcp_config
     install_mcp_servers
     setup_environment
     create_project_template
