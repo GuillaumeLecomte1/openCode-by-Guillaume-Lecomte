@@ -89,6 +89,16 @@
       }
     },
     "dispatch_modes": {
+      "orchestration": {
+        "mode": "HYBRID",
+        "agents": [
+          "orchestrator",
+          "frontend-react-specialist",
+          "backend-nodejs-specialist",
+          "mongodb-specialist"
+        ],
+        "model_strategy": "primary_model_priority"
+      },
       "planning": {
         "mode": "SEQUENTIAL",
         "agents": [

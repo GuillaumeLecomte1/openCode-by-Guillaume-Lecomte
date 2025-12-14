@@ -1,0 +1,313 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "version": "3.0",
+  "model": "minimax-M2",
+  "small_model": "grok-code-fast-1",
+  "autoupdate": true,
+  "theme": "opencode",
+  "tui": {
+    "scroll_speed": 3,
+    "colors": {
+      "primary": "#6366f1",
+      "secondary": "#8b5cf6",
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444"
+    }
+  },
+  "tools": {
+    "write": true,
+    "edit": true,
+    "read": true,
+    "bash": true,
+    "glob": true,
+    "grep": true,
+    "list": true,
+    "webfetch": true,
+    "task": true,
+    "todowrite": true,
+    "todoread": true
+  },
+  "formatter": {
+    "prettier": {
+      "command": ["npx", "prettier", "--write", "$FILE"],
+      "extensions": [
+        ".js",
+        ".ts",
+        ".jsx",
+        ".tsx",
+        ".json",
+        ".md",
+        ".css",
+        ".scss",
+        ".html"
+      ],
+      "ignore": ["node_modules", ".git", "dist", "build"]
+    }
+  },
+  "share": "manual",
+  "permission": {
+    "bash": "ask",
+    "edit": "auto",
+    "write": "auto"
+  },
+  "instructions": [
+    "docs/GUIDELINES.md",
+    "docs/AGENTS.md",
+    "docs/CONFIGURATION.md"
+  ],
+  "mcp": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-filesystem", "/home/glecomte"]
+    },
+    "git": {
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-git",
+        "--repository",
+        "/home/glecomte"
+      ]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "env": {
+        "CONTEXT7_API_KEY": "$CONTEXT7_API_KEY"
+      }
+    }
+  },
+  "orchestrator_config": {
+    "version": "3.0",
+    "model_routing": {
+      "primary_model": {
+        "name": "minimax-M2",
+        "usage": "Analyses complexes et architecture",
+        "cost_optimization": false,
+        "confidence_threshold": 0.8,
+        "specialties": [
+          "Architecture logicielle complexe",
+          "Analyse de patterns de design",
+          "Optimisation des performances",
+          "Sécurité avancée",
+          "Refactoring critique",
+          "Code review approfondi",
+          "Orchestration multi-agents",
+          "Intégration système"
+        ]
+      },
+      "fast_model": {
+        "name": "grok-code-fast-1",
+        "usage": "Tâches rapides et simples",
+        "cost_optimization": true,
+        "confidence_threshold": 0.6,
+        "specialties": [
+          "Analyses syntaxiques",
+          "Suggestions de code simples",
+          "Documentation basique",
+          "Tests unitaires simples",
+          "Refactoring mineur",
+          "Optimisations de base",
+          "Configuration standard"
+        ]
+      }
+    },
+    "dispatch_modes": {
+      "orchestration": {
+        "mode": "HYBRID",
+        "description": "Coordination intelligente multi-agents",
+        "agents": [
+          "orchestrator",
+          "frontend-react-specialist",
+          "backend-nodejs-specialist",
+          "mongodb-specialist"
+        ],
+        "model_strategy": "primary_model_priority",
+        "timeout": 300,
+        "retry_attempts": 2
+      },
+      "planning": {
+        "mode": "SEQUENTIAL",
+        "description": "Planification architecturale par étapes",
+        "agents": [
+          "system-architect",
+          "frontend-react-specialist",
+          "backend-nodejs-specialist",
+          "mongodb-specialist"
+        ],
+        "model_strategy": "primary_model_priority",
+        "timeout": 240
+      },
+      "backend_development": {
+        "mode": "PARALLEL",
+        "description": "Développement backend parallèle",
+        "agents": [
+          "backend-nodejs-specialist",
+          "mongodb-specialist",
+          "security-specialist"
+        ],
+        "model_strategy": "primary_model_for_architecture_fast_model_for_implementation",
+        "timeout": 480
+      },
+      "frontend_development": {
+        "mode": "PARALLEL",
+        "description": "Développement frontend parallèle",
+        "agents": ["frontend-react-specialist", "ecommerce-business-logic"],
+        "model_strategy": "primary_model_for_complex_components_fast_model_for_simple_elements",
+        "timeout": 360
+      },
+      "integration_testing": {
+        "mode": "HYBRID",
+        "description": "Tests d'intégration coordonnés",
+        "agents": [
+          "frontend-react-specialist",
+          "backend-nodejs-specialist",
+          "security-specialist",
+          "performance-engineer"
+        ],
+        "model_strategy": "primary_model_priority",
+        "timeout": 240
+      },
+      "deployment": {
+        "mode": "SEQUENTIAL",
+        "description": "Déploiement sécurisé séquentiel",
+        "agents": [
+          "devops-deployment-specialist",
+          "security-specialist",
+          "performance-engineer"
+        ],
+        "model_strategy": "fast_model_for_documentation_primary_model_for_critical_steps",
+        "timeout": 300
+      },
+      "refactoring": {
+        "mode": "PARALLEL",
+        "description": "Refactoring parallèle",
+        "agents": [
+          "refactoring-specialist",
+          "code-reviewer",
+          "performance-engineer"
+        ],
+        "model_strategy": "primary_model_for_critical_refactoring_fast_model_for_minor_changes",
+        "timeout": 360
+      }
+    },
+    "ecommerce_specialization": {
+      "domain_agents": [
+        "frontend-react-specialist",
+        "backend-nodejs-specialist",
+        "mongodb-specialist",
+        "ecommerce-business-logic",
+        "devops-deployment-specialist",
+        "security-specialist"
+      ],
+      "priority_score": {
+        "minimax-M2": 0.9,
+        "grok-code-fast-1": 0.6
+      },
+      "patterns": [
+        "shopping_cart",
+        "payment_processing",
+        "inventory_management",
+        "user_authentication",
+        "order_management",
+        "product_catalog",
+        "search_optimization"
+      ]
+    }
+  },
+  "performance_optimization": {
+    "execution_thresholds": {
+      "fast_task_threshold": 30,
+      "complex_task_threshold": 120,
+      "parallel_execution_limit": 4,
+      "max_concurrent_agents": 6
+    },
+    "model_switching_rules": {
+      "confidence_based_switching": true,
+      "cost_optimization": true,
+      "quality_threshold": 0.8,
+      "timeout_multiplier": 1.5
+    },
+    "caching": {
+      "agent_responses": true,
+      "model_predictions": true,
+      "config_cache_duration": 3600
+    }
+  },
+  "quality_assurance": {
+    "confidence_scoring": {
+      "high_confidence": 0.8,
+      "medium_confidence": 0.6,
+      "low_confidence": 0.4
+    },
+    "validation_rules": {
+      "mandatory_security_review": true,
+      "performance_impact_analysis": true,
+      "code_consistency_check": true,
+      "test_coverage_check": true
+    },
+    "metrics": {
+      "response_time_target": 5000,
+      "success_rate_target": 0.95,
+      "cost_efficiency_target": 0.85
+    }
+  },
+  "advanced_features": {
+    "auto_scaling": {
+      "enabled": true,
+      "agent_scaling": true,
+      "model_scaling": true
+    },
+    "monitoring": {
+      "performance_tracking": true,
+      "cost_monitoring": true,
+      "quality_metrics": true
+    },
+    "logging": {
+      "level": "INFO",
+      "structured_logging": true,
+      "performance_logging": true
+    }
+  },
+  "workflows": {
+    "ecommerce_development": {
+      "name": "E-commerce Full Stack Development",
+      "description": "Complete e-commerce project development workflow",
+      "phases": [
+        {
+          "name": "Planning",
+          "mode": "SEQUENTIAL",
+          "agents": ["system-architect", "mongodb-specialist"]
+        },
+        {
+          "name": "Backend Development",
+          "mode": "PARALLEL",
+          "agents": [
+            "backend-nodejs-specialist",
+            "mongodb-specialist",
+            "security-specialist"
+          ]
+        },
+        {
+          "name": "Frontend Development",
+          "mode": "PARALLEL",
+          "agents": ["frontend-react-specialist", "ecommerce-business-logic"]
+        },
+        {
+          "name": "Integration",
+          "mode": "HYBRID",
+          "agents": [
+            "frontend-react-specialist",
+            "backend-nodejs-specialist",
+            "security-specialist"
+          ]
+        },
+        {
+          "name": "Deployment",
+          "mode": "SEQUENTIAL",
+          "agents": ["devops-deployment-specialist", "security-specialist"]
+        }
+      ]
+    }
+  }
+}

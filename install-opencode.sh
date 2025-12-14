@@ -149,6 +149,21 @@ install_orchestrator() {
     fi
 }
 
+# Synchronize agents from sub-agents to agent/
+sync_agents() {
+    print_status "Synchronizing agents structure..."
+    
+    if [ -f "./sync_agents.sh" ]; then
+        chmod +x ./sync_agents.sh
+        ./sync_agents.sh
+        print_success "Agents synchronized successfully"
+        print_ecommerce "Orchestrator + Plan + Build as primary agents"
+        print_ecommerce "All other agents available as sub-agents"
+    else
+        print_warning "sync_agents.sh not found, skipping agent synchronization"
+    fi
+}
+
 # Install MCP servers
 install_mcp_servers() {
     print_status "Installing MCP servers..."
@@ -288,6 +303,7 @@ main() {
     install_agents
     install_commands
     install_orchestrator
+    sync_agents
     install_mcp_servers
     setup_environment
     create_project_template

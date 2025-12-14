@@ -22,7 +22,7 @@ from core.routing_matrix import RoutingMatrix, RoutingDecision
 # Imports des nouveaux composants multi-dispatch
 from .agent_selector import IntelligentAgentSelector, AgentScore
 from .dispatch_logic import IntelligentDispatchLogic, DispatchPlan, DispatchMode
-from .result_fusion import IntelligentResultAggregator, FusionResult
+from .result_fusion import IntelligentResultFusion, FusionResult
 from .dispatch_mode_selector import DispatchModeSelector, DispatchRecommendation
 
 class OrchestrationMode(Enum):
@@ -122,7 +122,7 @@ class PrimaryMultiDispatchOrchestrator:
         self.dispatch_logic = IntelligentDispatchLogic()
         
         # Agrégateur de résultats
-        self.result_aggregator = IntelligentResultAggregator()
+        self.result_aggregator = IntelligentResultFusion()
         
         # Sélecteur de mode de dispatch
         self.dispatch_mode_selector = DispatchModeSelector()
@@ -131,9 +131,9 @@ class PrimaryMultiDispatchOrchestrator:
     
     def orchestrate(self, 
                    project_text: str,
-                   project_context: Dict[str, Any] = None,
-                   user_constraints: Dict[str, Any] = None,
-                   task_executor: Callable = None) -> OrchestrationResult:
+                   project_context: Optional[Dict[str, Any]] = None,
+                   user_constraints: Optional[Dict[str, Any]] = None,
+                   task_executor: Optional[Callable] = None) -> OrchestrationResult:
         """
         Orchestration principale multi-dispatch
         

@@ -1,0 +1,444 @@
+{
+  "version": "3.0",
+  "last_updated": "2025-12-14",
+  "agents": {
+    "orchestrator": {
+      "name": "Orchestrateur Principal",
+      "category": "Core",
+      "type": "orchestrator",
+      "description": "Orchestrateur principal multi-dispatch intelligent pour la coordination automatique d'agents spécialisés e-commerce",
+      "priority": "high",
+      "model": "minimax-M2",
+      "capabilities": [
+        "multi_agent_coordination",
+        "intelligent_dispatch",
+        "model_routing",
+        "result_fusion",
+        "cost_optimization",
+        "project_classification",
+        "agent_selection"
+      ],
+      "dispatch_modes": ["SEQUENTIAL", "PARALLEL", "HYBRID"],
+      "aliases": ["primary-orchestrator"],
+      "e_commerce_optimized": true,
+      "confidence_threshold": 0.8
+    },
+    "plan": {
+      "name": "Planificateur",
+      "category": "Core",
+      "type": "coordinator",
+      "description": "Agent de planification et stratégie de développement",
+      "priority": "high",
+      "model": "minimax-M2",
+      "capabilities": [
+        "project_planning",
+        "architecture_design",
+        "task_decomposition",
+        "resource_allocation",
+        "timeline_estimation"
+      ],
+      "aliases": [],
+      "e_commerce_optimized": true
+    },
+    "build": {
+      "name": "Constructeur",
+      "category": "Core",
+      "type": "builder",
+      "description": "Agent de construction et compilation de projet",
+      "priority": "high",
+      "model": "grok-code-fast-1",
+      "capabilities": [
+        "project_construction",
+        "dependency_management",
+        "build_optimization",
+        "compilation",
+        "deployment_preparation"
+      ],
+      "aliases": [],
+      "e_commerce_optimized": false
+    },
+    "backend-nodejs-specialist": {
+      "name": "Backend Node.js Specialist",
+      "category": "E-commerce",
+      "type": "specialist",
+      "description": "Agent spécialisé pour le développement backend avec Node.js et Express, optimisé pour les projets e-commerce",
+      "priority": "high",
+      "model": "minimax-M2",
+      "capabilities": [
+        "api_architecture",
+        "authentication_security",
+        "database_integration",
+        "performance_optimization",
+        "error_handling",
+        "testing"
+      ],
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "frameworks": ["Express.js", "Fastify", "NestJS"],
+      "ecommerce_focus": true,
+      "security_level": "high"
+    },
+    "frontend-react-specialist": {
+      "name": "Frontend React Specialist",
+      "category": "E-commerce",
+      "type": "specialist",
+      "description": "Agent spécialisé pour le développement frontend React avec TypeScript, optimisé pour les interfaces e-commerce",
+      "priority": "high",
+      "model": "minimax-M2",
+      "capabilities": [
+        "react_development",
+        "typescript_integration",
+        "state_management",
+        "ui_ux_optimization",
+        "component_architecture",
+        "responsive_design"
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Redux",
+        "Styled Components",
+        "Tailwind CSS"
+      ],
+      "ecommerce_focus": true,
+      "performance_optimized": true
+    },
+    "mongodb-specialist": {
+      "name": "MongoDB Specialist",
+      "category": "E-commerce",
+      "type": "specialist",
+      "description": "Agent spécialisé pour la conception et l'optimisation de bases de données MongoDB pour projets e-commerce",
+      "priority": "high",
+      "model": "minimax-M2",
+      "capabilities": [
+        "schema_design",
+        "query_optimization",
+        "aggregation_pipelines",
+        "indexing_strategy",
+        "data_modeling",
+        "performance_tuning"
+      ],
+      "technologies": ["MongoDB", "Mongoose", "Aggregation Framework", "Atlas"],
+      "ecommerce_focus": true,
+      "scalability_expert": true
+    },
+    "ecommerce-business-logic": {
+      "name": "E-commerce Business Logic",
+      "category": "E-commerce",
+      "type": "specialist",
+      "description": "Agent spécialisé dans l'implémentation de la logique métier e-commerce",
+      "priority": "high",
+      "model": "minimax-M2",
+      "capabilities": [
+        "shopping_cart_management",
+        "payment_processing",
+        "order_management",
+        "inventory_tracking",
+        "user_management",
+        "business_rules"
+      ],
+      "business_patterns": [
+        "cart",
+        "checkout",
+        "payment",
+        "inventory",
+        "orders",
+        "users"
+      ],
+      "ecommerce_focus": true,
+      "domain_expert": true
+    },
+    "devops-deployment-specialist": {
+      "name": "DevOps & Deployment Specialist",
+      "category": "E-commerce",
+      "type": "specialist",
+      "description": "Agent spécialisé pour le déploiement et l'infrastructure DevOps pour applications e-commerce",
+      "priority": "medium",
+      "model": "grok-code-fast-1",
+      "capabilities": [
+        "containerization",
+        "ci_cd_setup",
+        "infrastructure_as_code",
+        "monitoring_setup",
+        "security_hardening",
+        "performance_monitoring"
+      ],
+      "technologies": [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Jenkins",
+        "GitHub Actions"
+      ],
+      "deployment_targets": ["cloud", "container", "serverless"],
+      "ecommerce_focus": true
+    },
+    "security-specialist": {
+      "name": "Security Specialist",
+      "category": "E-commerce",
+      "type": "specialist",
+      "description": "Agent spécialisé pour l'audit et la sécurité des applications e-commerce",
+      "priority": "high",
+      "model": "minimax-M2",
+      "capabilities": [
+        "security_audit",
+        "vulnerability_assessment",
+        "authentication_systems",
+        "data_protection",
+        "compliance_checking",
+        "threat_modeling"
+      ],
+      "security_domains": [
+        "authentication",
+        "authorization",
+        "data_encryption",
+        "secure_communication",
+        "input_validation",
+        "session_management"
+      ],
+      "ecommerce_focus": true,
+      "compliance_standards": ["PCI-DSS", "GDPR", "OWASP"]
+    },
+    "angular-architect": {
+      "name": "Angular Architect",
+      "category": "Architecture",
+      "type": "specialist",
+      " spécialisé dans l'architecturedescription": "Agent et le développement Angular",
+      "priority": "medium",
+      "model": "minimax-M2",
+      "capabilities": [
+        "angular_architecture",
+        "component_design",
+        "service_patterns",
+        "state_management",
+        "performance_optimization"
+      ],
+      "technologies": ["Angular", "TypeScript", "RxJS", "NgRx"],
+      "ecommerce_focus": false
+    },
+    "system-architect": {
+      "name": "System Architect",
+      "category": "Architecture",
+      "type": "specialist",
+      "description": "Agent spécialisé dans l'architecture système et logicielle",
+      "priority": "medium",
+      "model": "minimax-M2",
+      "capabilities": [
+        "system_design",
+        "architecture_patterns",
+        "scalability_planning",
+        "technology_selection",
+        "integration_strategy"
+      ],
+      "architecture_patterns": [
+        "microservices",
+        "monolith",
+        "event_driven",
+        "cqrs",
+        "hexagonal"
+      ],
+      "ecommerce_focus": false
+    },
+    "code-reviewer": {
+      "name": "Code Reviewer",
+      "category": "Quality",
+      "type": "specialist",
+      "description": "Agent spécialisé dans la revue de code et l'assurance qualité",
+      "priority": "medium",
+      "model": "grok-code-fast-1",
+      "capabilities": [
+        "code_quality_analysis",
+        "best_practices_enforcement",
+        "security_review",
+        "performance_analysis",
+        "documentation_review"
+      ],
+      "quality_metrics": [
+        "complexity",
+        "maintainability",
+        "testability",
+        "documentation_coverage"
+      ],
+      "ecommerce_focus": false
+    },
+    "performance-engineer": {
+      "name": "Performance Engineer",
+      "category": "Quality",
+      "type": "specialist",
+      "description": "Agent spécialisé dans l'optimisation des performances",
+      "priority": "medium",
+      "model": "minimax-M2",
+      "capabilities": [
+        "performance_analysis",
+        "optimization_strategies",
+        "load_testing",
+        "bottleneck_identification",
+        "scalability_improvement"
+      ],
+      "performance_areas": [
+        "database",
+        "frontend",
+        "backend",
+        "network",
+        "caching"
+      ],
+      "ecommerce_focus": true
+    },
+    "refactoring-specialist": {
+      "name": "Refactoring Specialist",
+      "category": "Quality",
+      "type": "specialist",
+      "description": "Agent spécialisé dans le refactoring et l'amélioration de code existant",
+      "priority": "medium",
+      "model": "minimax-M2",
+      "capabilities": [
+        "code_analysis",
+        "refactoring_patterns",
+        "dependency_management",
+        "code_smell_detection",
+        "architecture_improvement"
+      ],
+      "refactoring_types": [
+        "extract_method",
+        "extract_class",
+        "move_method",
+        "replace_conditional",
+        "simplify_interface"
+      ],
+      "ecommerce_focus": false
+    },
+    "tech-stack-researcher": {
+      "name": "Tech Stack Researcher",
+      "category": "Research",
+      "type": "specialist",
+      "description": "Agent spécialisé dans la recherche et l'évaluation de technologies",
+      "priority": "low",
+      "model": "grok-code-fast-1",
+      "capabilities": [
+        "technology_research",
+        "comparison_analysis",
+        "trend_identification",
+        "recommendation_engine",
+        "roadmap_planning"
+      ],
+      "research_areas": [
+        "frontend_frameworks",
+        "backend_technologies",
+        "databases",
+        "devops_tools",
+        "security_solutions"
+      ],
+      "ecommerce_focus": false
+    }
+  },
+  "categories": {
+    "Core": {
+      "description": "Agents principaux pour l'orchestration et la gestion de projet",
+      "agents": ["orchestrator", "plan", "build"],
+      "priority": "high"
+    },
+    "E-commerce": {
+      "description": "Agents spécialisés pour le développement e-commerce",
+      "agents": [
+        "backend-nodejs-specialist",
+        "frontend-react-specialist",
+        "mongodb-specialist",
+        "ecommerce-business-logic",
+        "devops-deployment-specialist",
+        "security-specialist"
+      ],
+      "priority": "high",
+      "optimized": true
+    },
+    "Architecture": {
+      "description": "Agents spécialisés dans l'architecture logicielle",
+      "agents": ["angular-architect", "system-architect"],
+      "priority": "medium"
+    },
+    "Quality": {
+      "description": "Agents spécialisés dans l'assurance qualité et l'optimisation",
+      "agents": [
+        "code-reviewer",
+        "performance-engineer",
+        "refactoring-specialist"
+      ],
+      "priority": "medium"
+    },
+    "Research": {
+      "description": "Agents spécialisés dans la recherche technologique",
+      "agents": ["tech-stack-researcher"],
+      "priority": "low"
+    }
+  },
+  "workflows": {
+    "ecommerce_fullstack": {
+      "name": "E-commerce Full Stack Development",
+      "description": "Workflow complet pour le développement e-commerce",
+      "phases": [
+        {
+          "name": "Architecture",
+          "mode": "SEQUENTIAL",
+          "agents": ["system-architect", "plan"],
+          "description": "Conception architecturale"
+        },
+        {
+          "name": "Backend Development",
+          "mode": "PARALLEL",
+          "agents": [
+            "backend-nodejs-specialist",
+            "mongodb-specialist",
+            "security-specialist"
+          ],
+          "description": "Développement backend"
+        },
+        {
+          "name": "Frontend Development",
+          "mode": "PARALLEL",
+          "agents": ["frontend-react-specialist", "ecommerce-business-logic"],
+          "description": "Développement frontend"
+        },
+        {
+          "name": "Integration",
+          "mode": "HYBRID",
+          "agents": ["frontend-react-specialist", "backend-nodejs-specialist"],
+          "description": "Intégration et tests"
+        },
+        {
+          "name": "Deployment",
+          "mode": "SEQUENTIAL",
+          "agents": ["devops-deployment-specialist", "security-specialist"],
+          "description": "Déploiement et mise en production"
+        }
+      ],
+      "estimated_duration": "4-6 hours",
+      "confidence_target": 0.85
+    },
+    "quick_prototype": {
+      "name": "Quick E-commerce Prototype",
+      "description": "Prototype rapide pour validation de concept",
+      "phases": [
+        {
+          "name": "Core Features",
+          "mode": "PARALLEL",
+          "agents": ["backend-nodejs-specialist", "frontend-react-specialist"],
+          "description": "Fonctionnalités de base"
+        }
+      ],
+      "estimated_duration": "1-2 hours",
+      "confidence_target": 0.75
+    }
+  },
+  "performance_metrics": {
+    "total_agents": 14,
+    "ecommerce_agents": 6,
+    "core_agents": 3,
+    "optimization_rate": "65%",
+    "average_response_time": "< 5s",
+    "success_rate": "95%"
+  }
+}

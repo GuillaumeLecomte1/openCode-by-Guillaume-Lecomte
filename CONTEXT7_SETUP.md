@@ -5,15 +5,17 @@ This project includes Context7 MCP server integration for up-to-date documentati
 ## Quick Setup
 
 1. **Run the setup script:**
+
    ```bash
    ./setup-context7.sh
    ```
 
 2. **Or configure manually:**
+
    ```bash
    # Copy the environment template
    cp .env.example .env
-   
+
    # Edit .env with your API keys
    nano .env
    ```
@@ -21,10 +23,12 @@ This project includes Context7 MCP server integration for up-to-date documentati
 ## Required API Keys
 
 ### Context7 (Required)
+
 - Get your API key from: https://context7.com/dashboard
 - Add to `.env`: `CONTEXT7_API_KEY=your_key_here`
 
 ### Upstash Redis (Optional - for private caching)
+
 - Get credentials from: https://console.upstash.com/redis
 - Add to `.env`:
   ```

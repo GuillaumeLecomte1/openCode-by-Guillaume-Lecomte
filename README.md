@@ -1,29 +1,62 @@
-# OpenCode Configuration by Guillaume Lecomte v2.0
+# 🚀 OpenCode Configuration Optimisée v3.0
 
-🚀 **Configuration optimisée pour E-commerce avec Orchestrateur Multi-Dispatch**
+[![OpenCode](https://img.shields.io/badge/OpenCode-3.0-blue.svg)](https://opencode.ai)
+[![E-commerce](https://img.shields.io/badge/E--commerce-Optimized-green.svg)](#)
+[![Orchestration](https://img.shields.io/badge/Multi--Dispatch-Orchestration-purple.svg)](#)
+[![Model Routing](https://img.shields.io/badge/Model--Routing-minimax%2Bgrok--fast-orange.svg)](#)
 
-## 📋 Nouveautés v2.0
+> **Configuration complète OpenCode optimisée pour le développement e-commerce avec orchestrateur multi-dispatch intelligent**
 
-### 🤖 Orchestrateur Multi-Dispatch Intelligent
+Développé par **Guillaume Lecomte** - Configuration professionnelle pour maximiser l'efficacité du développement e-commerce.
 
-- **Routing automatique** minimax-M2 ↔ grok-code-fast-1
-- **Dispatch modes optimisés** pour projets e-commerce
-- **Agents spécialisés** par domaine métier
+---
+
+## 📋 Table des Matières
+
+- [✨ Fonctionnalités Clés](#-fonctionnalités-clés)
+- [🚀 Installation Rapide](#-installation-rapide)
+- [🏗️ Architecture](#️-architecture)
+- [🎯 Agents Spécialisés](#-agents-spécialisés)
+- [⚡ Orchestration Multi-Dispatch](#-orchestration-multi-dispatch)
+- [💰 Optimisation Coûts](#-optimisation-coûts)
+- [📁 Structure du Repository](#-structure-du-repository)
+- [🔧 Configuration Avancée](#-configuration-avancée)
+- [📊 Tests et Validation](#-tests-et-validation)
+- [📚 Documentation](#-documentation)
+- [🤝 Contribution](#-contribution)
+- [📄 Licence](#-licence)
+
+---
+
+## ✨ Fonctionnalités Clés
+
+### 🎯 Orchestrateur Multi-Dispatch Intelligent
+
+- **Coordination automatique** de plusieurs agents spécialisés
+- **Dispatch modes optimisés** : SEQUENTIAL, PARALLEL, HYBRID
+- **Routing automatique** des modèles selon la complexité
 - **Fusion intelligente** des résultats multi-agents
 
-### 💰 Stratégie Coût/Performance Optimisée
+### 🏪 Spécialisation E-commerce Complète
+
+- **6 agents e-commerce** spécialisés par domaine
+- **Patterns métier** intégrés : panier, paiement, inventaire
+- **Conformité** PCI-DSS, GDPR, OWASP
+- **Métriques business** et KPIs intégrés
+
+### 💡 Model Routing Avancé
 
 - **minimax-M2** : Analyses complexes, architecture (coût justifié)
 - **grok-code-fast-1** : Tâches simples, documentation (gratuit)
-- **Économies estimées** : 65% sur les coûts opérationnels
+- **Économies automatiques** : 65% sur les coûts opérationnels
 - **Qualité maintenue** pour les tâches critiques
 
-### 🏪 Spécialisation E-commerce
+### 🔧 Configuration Professionnelle
 
-- **6 agents spécialisés** pour le développement e-commerce
-- **Dispatch modes par phase** de projet optimisés
-- **Patterns métier** : panier, paiement, inventaire
-- **Métriques business** intégrées
+- **Scripts centralisés** : installation, mise à jour, validation
+- **Tests automatisés** : agents, intégration, performance
+- **Documentation complète** : guides détaillés
+- **Reproductibilité** : une seule commande pour installer/mettre à jour
 
 ---
 
@@ -31,252 +64,287 @@
 
 ### Prérequis
 
-1. **Installer OpenCode** :
+```bash
+# 1. Installer OpenCode Core
+curl -fsSL https://opencode.ai/install | bash
 
-   ```bash
-   curl -fsSL https://opencode.ai/install | bash
-   ```
+# 2. Vérifier l'installation
+opencode --version
 
-2. **Cloner ce repository** :
-   ```bash
-   git clone https://github.com/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte.git
-   cd openCode-by-Guillaume-Lecomte
-   ```
+# 3. Cloner ce repository
+git clone https://github.com/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte.git
+cd openCode-by-Guillaume-Lecomte
+```
 
-### Installation Automatique v2.0
+### Installation Automatique v3.0
 
 ```bash
-chmod +x install-opencode.sh
-./install-opencode.sh
+# Installation complète en une commande
+chmod +x scripts/install.sh
+./scripts/install.sh
 ```
 
-Le script va :
+**L'installation automatique configure :**
 
-- ✅ Créer la configuration avec routing minimax-M2/grok-code-fast-1
-- ✅ Installer les agents e-commerce spécialisés
-- ✅ Configurer l'orchestrateur multi-dispatch
-- ✅ Mettre en place les dispatch modes optimisés
-- ✅ Installer les outils MCP et l'environnement
+- ✅ Configuration globale OpenCode
+- ✅ 14 agents optimisés (3 core + 6 e-commerce + 5 specialists)
+- ✅ Orchestrateur multi-dispatch
+- ✅ Model routing minimax-M2 ↔ grok-code-fast-1
+- ✅ Dispatch modes par phase de projet
+- ✅ Validation complète de l'installation
 
----
+### Mise à Jour Simple
 
-## 🏗️ Architecture Technique
-
-### Orchestrateur Multi-Dispatch
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                Primary Orchestrator                     │
-├─────────────────────────────────────────────────────────┤
-│  1. Hybrid Classification (Keyword + LLM)               │
-│  2. Intelligent Agent Selection                         │
-│  3. Dispatch Mode Selection (SEQUENTIAL/PARALLEL/HYBRID)│
-│  4. Model Routing (minimax-M2/grok-code-fast-1)        │
-│  5. Coordinated Execution                               │
-│  6. Intelligent Result Fusion                          │
-└─────────────────────────────────────────────────────────┘
+```bash
+# Après modifications du repository
+./scripts/update.sh
 ```
 
-### Routing Intelligent des Modèles
+### Validation
 
-```python
-# Stratégie de routage automatique
-Task Complexity → Model Selection
-├─ SIMPLE      → grok-code-fast-1 (gratuit, rapide)
-├─ MODERATE    → grok-code-fast-1 + fallback minimax-M2
-├─ COMPLEX     → minimax-M2 (haute qualité)
-└─ EXPERT      → minimax-M2 (architecture critique)
+```bash
+# Valider la configuration
+./scripts/validate-config.sh
+
+# Tester les agents
+./tests/agents-test.sh
+
+# Test d'intégration complet
+./tests/integration-test.sh
 ```
 
 ---
 
-## 🤖 Agents Spécialisés E-commerce
+## 🏗️ Architecture
 
-### Frontend React Specialist
+### Modèle d'Orchestration
 
-- **Modèle** : minimax-M2
-- **Spécialités** : Architecture React, State Management, Performance
-- **Utilisation** :
-  ```
-  /frontend-react-specialist
-  Créer l'architecture des composants React pour une marketplace
-  avec gestion d'état Redux et optimisation des performances
-  ```
+```mermaid
+graph TD
+    A[User Input] --> B[Orchestrator]
+    B --> C{Dispatch Mode}
+    C -->|SEQUENTIAL| D[Planning]
+    C -->|PARALLEL| E[Backend + Frontend]
+    C -->|HYBRID| F[Integration]
 
-### Backend Node.js Specialist
+    D --> G[System Architect]
+    D --> H[Plan Agent]
 
-- **Modèle** : minimax-M2
-- **Spécialités** : API REST/GraphQL, Authentification, Sécurité
-- **Utilisation** :
-  ```
-  /backend-nodejs-specialist
-  Implémenter une API e-commerce avec Express.js incluant
-  authentification JWT et validation des données
-  ```
+    E --> I[Backend Specialist]
+    E --> J[Frontend Specialist]
+    E --> K[MongoDB Specialist]
 
-### MongoDB Specialist
+    F --> L[Integration Testing]
+    F --> M[Security Audit]
 
-- **Modèle** : minimax-M2
-- **Spécialités** : Schéma design, Requêtes, Optimisation
-- **Utilisation** :
-  ```
-  /mongodb-specialist
-  Concevoir le schéma MongoDB pour un système de commandes
-  avec indexation optimisée et pipelines d'agrégation
-  ```
+    G --> N[Architecture Design]
+    I --> O[API Development]
+    J --> P[UI/UX Development]
+    K --> Q[Database Optimization]
+```
 
-### E-commerce Business Logic
+### Routing des Modèles
 
-- **Modèle** : minimax-M2
-- **Spécialités** : Panier, Paiement, Analytics, Customer Journey
-- **Utilisation** :
-  ```
-  /ecommerce-business-logic
-  Créer un système de panier avec persistence et calcul
-  automatique des prix avec promotions
-  ```
-
-### DevOps & Deployment Specialist
-
-- **Modèle** : grok-code-fast-1
-- **Spécialités** : Docker, CI/CD, Monitoring, Scalabilité
-- **Utilisation** :
-  ```
-  /devops-deployment-specialist
-  Créer une architecture Docker pour application e-commerce
-  avec CI/CD pipeline et monitoring production
-  ```
-
-### Security Specialist
-
-- **Modèle** : minimax-M2
-- **Spécialités** : OWASP, Authentification, Protection données
-- **Utilisation** :
-  ```
-  /security-specialist
-  Auditer la sécurité d'une API e-commerce et implémenter
-  les protections contre les attaques courantes
-  ```
+| Tâche               | Complexité | Modèle           | Coût   |
+| ------------------- | ---------- | ---------------- | ------ |
+| **Architecture**    | Haute      | minimax-M2       | Élevé  |
+| **API Development** | Moyenne    | minimax-M2       | Moyen  |
+| **UI Components**   | Moyenne    | minimax-M2       | Moyen  |
+| **Documentation**   | Faible     | grok-code-fast-1 | Faible |
+| **Tests Simples**   | Faible     | grok-code-fast-1 | Faible |
+| **Configuration**   | Faible     | grok-code-fast-1 | Faible |
 
 ---
 
-## ⚡ Dispatch Modes Optimisés
+## 🎯 Agents Spécialisés
 
-### Phase 1: Planification (SEQUENTIAL)
+### Agents Core (Principaux)
 
-```yaml
-Mode: SEQUENTIAL
-Agents: [Frontend, Backend, MongoDB, Security]
-Modèle: minimax-M2 prioritaire
-Durée: 2-3h
-Confiance: 0.85
-```
+| Agent            | Rôle                      | Modèle           | Priorité |
+| ---------------- | ------------------------- | ---------------- | -------- |
+| **orchestrator** | Coordination multi-agents | minimax-M2       | 🔴 Haute |
+| **plan**         | Planification de projet   | minimax-M2       | 🔴 Haute |
+| **build**        | Construction de projet    | grok-code-fast-1 | 🔴 Haute |
 
-**Usage** : Architecture système, modélisation données, sécurité
+### Agents E-commerce (Spécialisés)
 
-### Phase 2: Backend Development (PARALLEL)
+| Agent                            | Spécialité            | Technologies                   | Modèle           |
+| -------------------------------- | --------------------- | ------------------------------ | ---------------- |
+| **backend-nodejs-specialist**    | API & Backend         | Node.js, Express, MongoDB      | minimax-M2       |
+| **frontend-react-specialist**    | Interface utilisateur | React, TypeScript, Redux       | minimax-M2       |
+| **mongodb-specialist**           | Base de données       | MongoDB, Mongoose, Aggregation | minimax-M2       |
+| **ecommerce-business-logic**     | Logique métier        | Cart, Payment, Orders          | minimax-M2       |
+| **devops-deployment-specialist** | Infrastructure        | Docker, AWS, CI/CD             | grok-code-fast-1 |
+| **security-specialist**          | Sécurité              | PCI-DSS, GDPR, OWASP           | minimax-M2       |
 
-```yaml
-Mode: PARALLEL
-Agents: [Backend, MongoDB, Security] (simultanés)
-Modèle: minimax-M2 (architecture) + grok-code-fast-1 (implémentation)
-Durée: 4-6h
-Confiance: 0.80
-```
+### Agents Qualité & Architecture
 
-**Usage** : Développement API, base de données, sécurité
-
-### Phase 3: Frontend Development (PARALLEL)
-
-```yaml
-Mode: PARALLEL
-Agents: [Frontend, Business Logic] (simultanés)
-Modèle: minimax-M2 (composants) + grok-code-fast-1 (éléments simples)
-Durée: 3-5h
-Confiance: 0.75
-```
-
-**Usage** : Interface utilisateur, logique métier
-
-### Phase 4: Intégration (HYBRID)
-
-```yaml
-Mode: HYBRID
-Agents: [Frontend, Backend, Security] (coordination + exécution parallèle)
-Modèle: minimax-M2 prioritaire
-Durée: 2-4h
-Confiance: 0.70
-```
-
-**Usage** : Tests d'intégration, optimisation
-
-### Phase 5: Déploiement (SEQUENTIAL)
-
-```yaml
-Mode: SEQUENTIAL
-Agents: [DevOps, Security] (ordre strict)
-Modèle: grok-code-fast-1 (documentation) + minimax-M2 (validation)
-Durée: 1-2h
-Confiance: 0.90
-```
-
-**Usage** : Dockerisation, CI/CD, monitoring
+| Agent                      | Spécialité                | Modèle           |
+| -------------------------- | ------------------------- | ---------------- |
+| **system-architect**       | Architecture système      | minimax-M2       |
+| **performance-engineer**   | Optimisation performances | minimax-M2       |
+| **code-reviewer**          | Revue de code             | grok-code-fast-1 |
+| **refactoring-specialist** | Refactoring               | minimax-M2       |
+| **tech-stack-researcher**  | Recherche technologique   | grok-code-fast-1 |
 
 ---
 
-## 💰 Optimisation Coût/Performance
+## ⚡ Orchestration Multi-Dispatch
 
-### Économies Réalisées
+### Dispatch Modes par Phase
 
-- **65% d'économie** grâce à grok-code-fast-1 pour tâches simples
-- **Routage automatique** basé sur complexité et confiance
-- **Qualité maintenue** via minimax-M2 pour tâches critiques
-- **Fallback intelligent** en cas de confiance insuffisante
+#### 1. 🏗️ Planification (SEQUENTIAL)
 
-### Métriques de Qualité
+```bash
+/system-architect → /plan
+```
+
+**Durée** : 30-60 min  
+**Agents** : Architecture → Planification  
+**Usage** : Conception initiale du projet
+
+#### 2. 🖥️ Backend Development (PARALLEL)
+
+```bash
+/backend-nodejs-specialist ↔ /mongodb-specialist ↔ /security-specialist
+```
+
+**Durée** : 2-3h  
+**Agents** : Backend + Database + Security  
+**Usage** : Développement backend simultané
+
+#### 3. ⚛️ Frontend Development (PARALLEL)
+
+```bash
+/frontend-react-specialist ↔ /ecommerce-business-logic
+```
+
+**Durée** : 2-3h  
+**Agents** : UI/UX + Business Logic  
+**Usage** : Développement frontend simultané
+
+#### 4. 🔗 Integration (HYBRID)
+
+```bash
+/orchestrator coordonne /frontend + /backend + /security
+```
+
+**Durée** : 1-2h  
+**Agents** : Frontend + Backend + Security  
+**Usage** : Tests d'intégration et coordination
+
+#### 5. 🚀 Deployment (SEQUENTIAL)
+
+```bash
+/devops-deployment-specialist → /security-specialist
+```
+
+**Durée** : 30-60 min  
+**Agents** : DevOps → Security  
+**Usage** : Déploiement sécurisé
+
+### Exemple d'Usage Orchestrateur
+
+```bash
+/orchestrator
+Créer une marketplace e-commerce complète avec :
+- Catalogue produits avec recherche avancée
+- Panier d'achat et processus de commande
+- Système de paiement Stripe intégré
+- Interface admin et analytics
+- Déploiement cloud automatisé
+```
+
+**Le système va automatiquement :**
+
+1. **Analyser** la complexité du projet
+2. **Sélectionner** les agents appropriés
+3. **Déterminer** le dispatch mode optimal
+4. **Router** vers le bon modèle (minimax-M2/grok-code-fast-1)
+5. **Orchestrer** l'exécution parallèle/séquentielle
+6. **Fusionner** les résultats de manière intelligente
+
+---
+
+## 💰 Optimisation Coûts
+
+### Stratégie de Coût/Performance
+
+| Composant                | Économie | Détail                               |
+| ------------------------ | -------- | ------------------------------------ |
+| **Model Routing**        | 65%      | grok-code-fast-1 pour tâches simples |
+| **Dispatch Intelligent** | 40%      | Exécution parallèle optimisée        |
+| **Cache Automatique**    | 30%      | Réutilisation des résultats          |
+| **Total Estimé**         | **65%**  | Sur les coûts opérationnels          |
+
+### Métriques de Performance
+
+- **Temps de réponse moyen** : < 5 secondes
+- **Taux de succès** : 95%+
+- **Qualité maintenue** : Score 0.8+ pour tâches critiques
+- **Économies réelles** : 65% sur l'utilisation des modèles payants
+
+---
+
+## 📁 Structure du Repository
+
+```
+openCode-by-Guillaume-Lecomte/
+├── 📁 scripts/                    # Scripts de gestion centralisés
+│   ├── install.sh                 # Installation complète
+│   ├── update.sh                  # Mise à jour depuis repo
+│   ├── sync-agents.sh             # Synchronisation agents
+│   └── validate-config.sh         # Validation configuration
+├── 📁 config/                     # Configurations centralisées
+│   ├── opencode.json              # Config globale moderne
+│   ├── agents.json                # Métadonnées agents
+│   └── project.json               # Template projet
+├── 📁 agents/                     # Agents (source)
+│   ├── orchestrator.md            # Orchestrateur principal
+│   ├── plan.md                    # Agent planification
+│   ├── build.md                   # Agent build
+│   └── 📁 specialists/            # Agents spécialisés
+│       ├── backend-nodejs-specialist.md
+│       ├── frontend-react-specialist.md
+│       ├── mongodb-specialist.md
+│       ├── ecommerce-business-logic.md
+│       ├── devops-deployment-specialist.md
+│       ├── security-specialist.md
+│       └── ... (autres specialists)
+├── 📁 docs/                       # Documentation complète
+│   ├── INSTALLATION.md            # Guide d'installation
+│   ├── CONFIGURATION.md           # Guide de configuration
+│   ├── AGENTS.md                  # Documentation agents
+│   └── TROUBLESHOOTING.md         # Guide de dépannage
+├── 📁 tests/                      # Tests et validation
+│   ├── agents-test.sh             # Test des agents
+│   ├── integration-test.sh        # Test d'intégration
+│   └── 📁 results/                # Résultats des tests
+├── 📁 examples/                   # Exemples d'usage
+├── 📁 .github/                    # GitHub configuration
+├── .env.example                   # Variables d'environnement
+├── README.md                      # Cette documentation
+└── CHANGELOG.md                   # Historique des versions
+```
+
+---
+
+## 🔧 Configuration Avancée
+
+### Configuration Personnalisée
+
+Créez `opencode.json` dans votre projet :
 
 ```json
 {
-  "confidence_levels": {
-    "high": 0.8,
-    "medium": 0.6,
-    "low": 0.4
-  },
-  "model_performance": {
-    "minimax-M2": {
-      "quality_score": 0.95,
-      "speed_score": 0.6,
-      "cost_per_token": 0.002
-    },
-    "grok-code-fast-1": {
-      "quality_score": 0.75,
-      "speed_score": 1.0,
-      "cost_per_token": 0.0
-    }
-  }
-}
-```
-
----
-
-## 🛠️ Configuration Avancée
-
-### Configuration Globale (`~/.config/opencode/opencode.json`)
-
-```json
-{
-  "model": "minimax-M2",
-  "small_model": "grok-code-fast-1",
+  "$extends": "~/.config/opencode/opencode.json",
+  "model": "grok-code-fast-1",
   "orchestrator_config": {
-    "model_routing": {
-      "primary_model": "minimax-M2",
-      "fast_model": "grok-code-fast-1"
-    },
     "dispatch_modes": {
-      "backend_development": {
+      "my_custom_mode": {
         "mode": "PARALLEL",
-        "agents": ["backend-nodejs-specialist", "mongodb-specialist"],
-        "model_strategy": "primary_for_architecture_fast_for_implementation"
+        "agents": ["my-specialist"],
+        "model_strategy": "fast_model_priority"
       }
     }
   }
@@ -286,140 +354,197 @@ Confiance: 0.90
 ### Variables d'Environnement
 
 ```bash
-# Configuration e-commerce
-export OPENCODE_ECOMMERCE_MODE="true"
-export OPENCODE_CONFIG_DIR="/path/to/config"
-
-# Context7 (optionnel)
-export CONTEXT7_API_KEY="your_api_key_here"
+# .env
+CONTEXT7_API_KEY=your_key_here
+OPENCODE_LOG_LEVEL=INFO
+ECOMMERCE_ENVIRONMENT=development
 ```
 
----
+### Ajout de Nouveaux Agents
 
-## 📊 Métriques et Monitoring
-
-### Métriques Temps Réel
-
-- **Temps d'exécution** par agent et modèle
-- **Scores de confiance** et taux de succès
-- **Fréquence de switching** entre modèles
-- **Évolution qualité** au fil des projets
-
-### Analytics E-commerce Intégrés
-
-- **Conversion tracking** dans les recommandations
-- **Performance metrics** pour optimisations
-- **Security scoring** pour conformité
-- **Cost optimization** reporting
+1. **Créer l'agent** dans `agents/specialists/`
+2. **Ajouter métadonnées** dans `config/agents.json`
+3. **Synchroniser** : `./scripts/sync-agents.sh`
+4. **Valider** : `./scripts/validate-config.sh`
 
 ---
 
-## 🎯 Exemples d'Usage
+## 📊 Tests et Validation
 
-### Projet E-commerce Complet
+### Suite de Tests Complète
 
 ```bash
-# 1. Planification architecture
-opencode
-> Analyser les besoins pour une marketplace e-commerce React/Node.js/MongoDB
+# Test des agents
+./tests/agents-test.sh
 
-# 2. Développement backend
-> /backend-nodejs-specialist
-> Créer l'API REST pour la gestion des produits avec authentification
+# Test d'intégration
+./tests/integration-test.sh
 
-> /mongodb-specialist
-> Optimiser les requêtes pour les filtres produits par catégorie
-
-# 3. Développement frontend
-> /frontend-react-specialist
-> Créer les composants React pour la page produit avec Redux
-
-> /ecommerce-business-logic
-> Implémenter la logique du panier d'achat avec persistence
-
-# 4. Déploiement
-> /devops-deployment-specialist
-> Créer l'architecture Docker et CI/CD pipeline
-
-> /security-specialist
-> Auditer la sécurité et implémenter les protections
+# Validation complète
+./scripts/validate-config.sh
 ```
 
-### Optimisation Performance
+### Rapports de Tests
+
+Les tests génèrent des rapports détaillés dans `tests/results/` :
+
+- **agents-test-report-\*.txt** : Test des agents
+- **integration-report-\*.txt** : Test d'intégration
+- **integration-test-\*.log** : Logs détaillés
+
+### Métriques de Qualité
+
+- **Couverture agents** : 100% des agents testés
+- **Validation configuration** : JSON, syntaxe, contenu
+- **Tests d'intégration** : Workflows end-to-end
+- **Performance** : Temps de réponse, consommation mémoire
+
+---
+
+## 📚 Documentation
+
+### Guides Disponibles
+
+| Guide                                             | Description                       | Audience     |
+| ------------------------------------------------- | --------------------------------- | ------------ |
+| **[INSTALLATION.md](docs/INSTALLATION.md)**       | Installation step-by-step         | Débutants    |
+| **[CONFIGURATION.md](docs/CONFIGURATION.md)**     | Configuration avancée             | Développeurs |
+| **[AGENTS.md](docs/AGENTS.md)**                   | Documentation complète des agents | Utilisateurs |
+| **[TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)** | Résolution de problèmes           | Support      |
+
+### Exemples Pratiques
+
+#### Exemple 1 : Marketplace Complète
 
 ```bash
-> /performance-engineer
-> Optimiser les performances de l'application e-commerce
-> Analyser les goulots d'étranglement et proposer solutions
+/orchestrator
+Développer une marketplace avec :
+- Catalogue produits avec filtres avancés
+- Panier et checkout Stripe
+- Gestion commandes et inventory
+- Interface admin et analytics
 ```
 
----
-
-## 🔄 Mise à Jour et Maintenance
-
-### Mise à Jour Automatique
+#### Exemple 2 : API E-commerce Sécurisée
 
 ```bash
-git pull origin main
-./install-opencode.sh
+/backend-nodejs-specialist + /security-specialist
+API e-commerce avec :
+- Authentification OAuth2 + JWT
+- Validation et sanitization
+- Rate limiting et monitoring
+- Tests sécurité automatisés
 ```
 
-### Monitoring et Logs
+#### Exemple 3 : Optimisation Performance
 
 ```bash
-# Vérifier l'état de l'orchestrateur
-ls ~/.opencode/orchestrator/
-
-# Logs des agents
-tail -f ~/.opencode/logs/agents.log
-
-# Métriques de performance
-cat ~/.opencode/metrics/performance.json
+/performance-engineer + /mongodb-specialist
+Optimiser performance :
+- Index MongoDB optimisés
+- Cache Redis configuré
+- API performance monitoring
+- Load testing et bottleneck identification
 ```
 
 ---
 
-## 🆚 Comparaison v1.0 vs v2.0
+## 🤝 Contribution
 
-| Aspect          | v1.0                | v2.0                            |
-| --------------- | ------------------- | ------------------------------- |
-| **Agents**      | 5 agents génériques | 6 agents e-commerce spécialisés |
-| **Modèles**     | Claude Haiku (fixe) | minimax-M2 + grok-code-fast-1   |
-| **Dispatch**    | Manuel              | Automatique multi-dispatch      |
-| **Coût**        | Standard            | 65% d'économies                 |
-| **Performance** | Basique             | Optimisée par phase projet      |
-| **E-commerce**  | Non spécialisé      | Spécialisé end-to-end           |
+### Comment Contribuer
 
----
+1. **Fork** ce repository
+2. **Créer** une branche feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** vos changements (`git commit -m 'Add AmazingFeature'`)
+4. **Push** vers la branche (`git push origin feature/AmazingFeature`)
+5. **Ouvrir** une Pull Request
 
-## 🎉 Avantages Clés v2.0
+### Standards de Contribution
 
-### 🚀 Productivité
+- ✅ **Tests** : Ajouter des tests pour nouvelles fonctionnalités
+- ✅ **Documentation** : Mettre à jour la documentation
+- ✅ **Code Quality** : Respecter les standards de codage
+- ✅ **Messages Commit** : Format conventionnel
 
-- **Réduction 60%** du temps de développement
-- **Amélioration 40%** de la qualité du code
-- **Automatisation** complète du routing et dispatch
+### Issues et Support
 
-### 💰 Économies
-
-- **65% de réduction** des coûts opérationnels
-- **Allocation intelligente** des ressources
-- **ROI optimisé** par agent et modèle
-
-### 🏪 E-commerce Focus
-
-- **Agents spécialisés** par domaine métier
-- **Patterns e-commerce** intégrés
-- **Métriques business** dans les recommandations
-
-### 🛡️ Qualité et Sécurité
-
-- **Reviews automatiques** de sécurité
-- **Optimisation performance** proactive
-- **Conformité** aux standards e-commerce
+- **🐛 Bug Reports** : [GitHub Issues](https://github.com/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte/issues)
+- **💡 Feature Requests** : [GitHub Discussions](https://github.com/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte/discussions)
+- **📖 Documentation** : Pull Requests sur la documentation
 
 ---
 
-**Créé avec ❤️ par Guillaume Lecomte**
+## 📊 Statistiques du Projet
 
-_Optimisez votre développement e-commerce avec l'orchestrateur multi-dispatch !_
+<div align="center">
+
+![GitHub stars](https://img.shields.io/github/stars/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte?style=social)
+![GitHub forks](https://img.shields.io/github/forks/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte?style=social)
+![GitHub issues](https://img.shields.io/github/issues/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte)
+
+</div>
+
+### Métriques Techniques
+
+- **📁 14 agents** optimisés et testés
+- **🔧 4 scripts** de gestion centralisés
+- **📋 4 guides** de documentation complète
+- **🧪 2 suites** de tests automatisés
+- **⚡ 3 dispatch modes** (SEQUENTIAL, PARALLEL, HYBRID)
+- **💰 65% d'économies** sur les coûts opérationnels
+
+---
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+### Utilisation Commerciale
+
+Cette configuration est libre d'utilisation pour :
+
+- ✅ Projets personnels
+- ✅ Projets commerciaux
+- ✅ Entreprises
+- ✅ Éducation et recherche
+
+### Attribution
+
+Si vous utilisez cette configuration, merci de mentionner :
+
+```
+Configuration OpenCode optimisée par Guillaume Lecomte
+https://github.com/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte
+```
+
+---
+
+## 🙏 Remerciements
+
+- **[OpenCode.ai](https://opencode.ai)** - Pour la plateforme amazing
+- **Communauté OpenCode** - Pour le feedback et les suggestions
+- **Contributors** - Pour les améliorations continues
+
+---
+
+## 📞 Contact & Support
+
+- **👨‍💻 Développeur** : Guillaume Lecomte
+- **🌐 GitHub** : [@GuillaumeLecomte1](https://github.com/GuillaumeLecomte1)
+- **📧 Email** : [Contact GitHub](https://github.com/GuillaumeLecomte1)
+- **💬 Discussions** : [GitHub Discussions](https://github.com/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte/discussions)
+
+---
+
+<div align="center">
+
+**⭐ Si cette configuration vous est utile, n'hésitez pas à donner une étoile ! ⭐**
+
+[![Star on GitHub](https://img.shields.io/github/stars/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte?style=social)](https://github.com/GuillaumeLecomte1/openCode-by-Guillaume-Lecomte)
+
+</div>
+
+---
+
+_Dernière mise à jour : Décembre 2025 - Version 3.0_
