@@ -80,7 +80,7 @@ install_agents() {
 install_commands() {
     print_status "Installing OpenCode commands..."
     
-    for command_file in commands/*.md; do
+    for command_file in command/*.md; do
         if [ -f "$command_file" ]; then
             cp "$command_file" ~/.opencode/command/
             print_success "Installed command: $(basename "$command_file")"
