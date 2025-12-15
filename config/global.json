@@ -1,8 +1,7 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "theme": "opencode",
-  "model": "minimax-M2",
-  "small_model": "grok-code-fast-1",
+  "model": "claude-3-5-sonnet-20241022",
   "autoupdate": true,
   "tui": { "scroll_speed": 3 },
   "tools": {
@@ -34,143 +33,14 @@
     }
   },
   "share": "manual",
-  "permission": { "bash": "ask", "edit": "auto" },
+  "permission": {
+    "bash": "ask",
+    "edit": "allow",
+    "write": "allow"
+  },
   "instructions": [
     "CONTRIBUTING.md",
     "docs/guidelines.md",
     ".cursor/rules/*.md"
-  ],
-  "mcp": {
-    "filesystem": {
-      "command": "npx",
-      "args": ["@modelcontextprotocol/server-filesystem", "/home/glecomte"]
-    },
-    "git": {
-      "command": "npx",
-      "args": [
-        "@modelcontextprotocol/server-git",
-        "--repository",
-        "/home/glecomte"
-      ]
-    },
-    "context7": {
-      "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"],
-      "env": { "CONTEXT7_API_KEY": "$CONTEXT7_API_KEY" }
-    }
-  },
-  "orchestrator_config": {
-    "model_routing": {
-      "primary_model": {
-        "name": "minimax-M2",
-        "usage": "Analyses complexes et architecture",
-        "cost_optimization": false,
-        "specialties": [
-          "Architecture logicielle complexe",
-          "Analyse de patterns de design",
-          "Optimisation des performances",
-          "Sécurité avancée",
-          "Refactoring critique",
-          "Code review approfondi"
-        ]
-      },
-      "fast_model": {
-        "name": "grok-code-fast-1",
-        "usage": "Tâches rapides et simples",
-        "cost_optimization": true,
-        "specialties": [
-          "Analyses syntaxiques",
-          "Suggestions de code simples",
-          "Documentation basique",
-          "Tests unitaires simples",
-          "Refactoring mineur",
-          "Optimisations de base"
-        ]
-      }
-    },
-    "dispatch_modes": {
-      "orchestration": {
-        "mode": "HYBRID",
-        "agents": [
-          "orchestrator",
-          "frontend-react-specialist",
-          "backend-nodejs-specialist",
-          "mongodb-specialist"
-        ],
-        "model_strategy": "primary_model_priority"
-      },
-      "planning": {
-        "mode": "SEQUENTIAL",
-        "agents": [
-          "frontend-react-specialist",
-          "backend-nodejs-specialist",
-          "mongodb-specialist"
-        ],
-        "model_strategy": "primary_model_priority"
-      },
-      "backend_development": {
-        "mode": "PARALLEL",
-        "agents": [
-          "backend-nodejs-specialist",
-          "mongodb-specialist",
-          "security-specialist"
-        ],
-        "model_strategy": "primary_model_for_architecture_fast_model_for_implementation"
-      },
-      "frontend_development": {
-        "mode": "PARALLEL",
-        "agents": ["frontend-react-specialist", "ecommerce-business-logic"],
-        "model_strategy": "primary_model_for_complex_components_fast_model_for_simple_elements"
-      },
-      "integration_testing": {
-        "mode": "HYBRID",
-        "agents": [
-          "frontend-react-specialist",
-          "backend-nodejs-specialist",
-          "security-specialist"
-        ],
-        "model_strategy": "primary_model_priority"
-      },
-      "deployment": {
-        "mode": "SEQUENTIAL",
-        "agents": ["devops-deployment-specialist", "security-specialist"],
-        "model_strategy": "fast_model_for_documentation_primary_model_for_critical_steps"
-      }
-    },
-    "ecommerce_specialization": {
-      "domain_agents": [
-        "frontend-react-specialist",
-        "backend-nodejs-specialist",
-        "mongodb-specialist",
-        "ecommerce-business-logic",
-        "devops-deployment-specialist",
-        "security-specialist"
-      ],
-      "priority_score": { "minimax-M2": 0.9, "grok-code-fast-1": 0.6 }
-    }
-  },
-  "performance_optimization": {
-    "execution_thresholds": {
-      "fast_task_threshold": 30,
-      "complex_task_threshold": 120,
-      "parallel_execution_limit": 4
-    },
-    "model_switching_rules": {
-      "confidence_based_switching": true,
-      "cost_optimization": true,
-      "quality_threshold": 0.8
-    }
-  },
-  "quality_assurance": {
-    "confidence_scoring": {
-      "high_confidence": 0.8,
-      "medium_confidence": 0.6,
-      "low_confidence": 0.4
-    },
-    "validation_rules": {
-      "mandatory_security_review": true,
-      "performance_impact_analysis": true,
-      "code_consistency_check": true
-    }
-  }
+  ]
 }
